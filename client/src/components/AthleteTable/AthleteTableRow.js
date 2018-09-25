@@ -19,14 +19,11 @@ class AthleteTableRow extends Component {
     }
 
     componentDidUpdate() {
-        console.log("props", this.props.athlete);
         if (!this.props.enableActions) this.scrollToAthlete();
     }
 
     componentWillReceiveProps(nextProps){
-        console.log("componentWillReceiveProps");
         if(nextProps.athlete !== this.props.athlete){
-            console.log("componentWillReceiveProps update");
             this.setState({athlete: nextProps.athlete});
         }
     }

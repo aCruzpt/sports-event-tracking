@@ -17,7 +17,7 @@
   --bold: 600;
 
   --huge-text: 32px;
-  --app-width: 1024px; /*temp value*/
+  --app-width: 1024px;
 }
 
 * {
@@ -75,9 +75,4 @@ nav a:hover {
 nav a.active {
   background: var(--accent-gradient);
   color: #fff;
-}
-
-.athlete-sub-table {
-  height: 300px;
-  overflow-y: scroll;
 }

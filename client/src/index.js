@@ -9,8 +9,4 @@ import { initWebSocket } from "./websocket";
 import AppRoutes from "./AppRoutes";
 
 initWebSocket(store);
-ReactDOM.render(
-    <Provider store={store}>
-        <AppRoutes/>
-    </Provider>,
-    document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><AppRoutes/></Provider>,document.getElementById('root'));

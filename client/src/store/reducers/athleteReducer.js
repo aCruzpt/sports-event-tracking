@@ -43,7 +43,7 @@ function raceStarted(state) {
     })
 }
 
-const INITIAL_ATHLETES = []; // { chipId, fullName, hasEnteredCorridor, hasCrossedFinishLine }
+const INITIAL_ATHLETES = [];
 function athletes(state = INITIAL_ATHLETES, action) {
     switch(action.type) {
         case ACTION_TYPES.FETCH_ATHLETES:

@@ -2,7 +2,6 @@ import { ACTION_TYPES } from "../constants";
 import { WebSocket } from "../../websocket";
 
 function startRace(action) {
-    console.log("reducer", action);
     WebSocket.startRace(action.time);
     return { inProgress: true, startTime: action.time };
 }
