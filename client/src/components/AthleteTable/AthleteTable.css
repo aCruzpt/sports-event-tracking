@@ -1,0 +1,47 @@
+.Athletes-table {
+    max-width: var(--app-width);
+    margin: 10px auto;
+    padding: var(--padding);
+    background: #fff;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Athletes-table {
+        margin: 10px 15px;
+    }
+}
+
+.Athletes-table table {
+    width: 100%;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+}
+
+button.athlete-btn {
+    border: none;
+    background: var(--accent-gradient);
+    padding: 7px 10px;
+    font-size: 12px;
+    color: #fff;
+    margin: 0 5px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: .9;
+}
+
+button.athlete-btn:hover {
+    opacity: 1;
+}
+
+button.athlete-btn:disabled {
+    background: var(--bg);
+    color: #ccc;
+    cursor: initial;
+    opacity: 1;
+}

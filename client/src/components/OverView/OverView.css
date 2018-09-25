@@ -1,0 +1,57 @@
+.Race-overview {
+    display: flex;
+    max-width: var(--app-width);
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Race-overview {
+        margin: 10px 15px;
+    }
+}
+
+.Race-timer, .Race-participant-count, .Race-stats {
+    flex: 1;
+    position: relative;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Race-participant-count {
+    margin: 10px 10px 10px 0;
+}
+
+.Race-stats {
+    margin: 10px 0 10px 10px;
+}
+
+.overview-title {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    opacity: .7;
+}
+
+.overview-content {
+    font-family: var(--mono-font);
+    font-weight: var(--bold-mono-font);
+    font-size: var(--huge-text);
+    color: #fff;
+    text-align: center;
+}
+
+.Race-participant-count {
+    background: var(--accent-gradient2);
+}
+
+.Race-stats {
+    background: var(--accent-gradient3);
+}
+

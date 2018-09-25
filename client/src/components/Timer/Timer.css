@@ -1,0 +1,29 @@
+.Race-timer {
+    background: var(--accent-gradient);
+    margin: 10px;
+}
+
+.timer-actions {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.timer-actions button {
+    background: rgba(255,255,255,.2);
+    color: #fff;
+    border: none;
+    padding: 7px var(--padding);
+    font-size: 12px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.timer-actions button:hover {
+    background: rgba(255,255,255,.15);
+}
